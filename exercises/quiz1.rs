@@ -13,7 +13,13 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
+fn calculate_price_of_apples(input:i32)->i32{
+    if input<=40{
+     return    input*2
+    }
+    input 
+    
+}
 
 // Put your function here!
 // fn calculate_price_of_apples {
