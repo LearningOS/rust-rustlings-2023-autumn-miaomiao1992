@@ -23,5 +23,5 @@ fn main() {
     // testcase return early. Fill in the command to tell
     // Cargo about that.
     let your_command = "Your command here, please checkout exercises/tests/build.rs";
-    println!("cargo:{}", "rustc-cfg=CFG[feature="pass"]");
+    println!("cargo:{}", "rustc-cfg=feature=\"pass\"");
 }
