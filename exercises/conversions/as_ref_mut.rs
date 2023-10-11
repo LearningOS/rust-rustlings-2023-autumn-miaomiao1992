@@ -22,13 +22,13 @@ fn char_counter<T: AsRef<str>>(arg: T) -> usize {
 
 // Squares a number using as_mut().
 // TODO: Add the appropriate trait bound.
-222
+
 use std::ops::Mul;
-fn num_sq<T: AsRef<R>,R>(arg: &mut T)
+fn num_sq<T: AsMut<R>,R>(arg: &mut T)
 where R: Mul<R, Output = R>+Copy
  {
     // TODO: Implement the function body.
-    arg.as_ref()= (*arg.as_ref())*(*arg.as_ref())
+    *arg.as_mut()= (*arg.as_mut())*(*arg.as_mut())
 }
 
 #[cfg(test)]
