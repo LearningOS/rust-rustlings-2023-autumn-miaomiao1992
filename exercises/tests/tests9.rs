@@ -26,11 +26,11 @@
 // line of code in the testcase should call the same function.
 //
 // You should NOT modify any existing code except for adding two lines of attributes.
-
-
-
+222
 extern "Rust" {
+    #[no_mangle]
     fn my_demo_function(a: u32) -> u32;
+    #[no_mangle]
     fn my_demo_function_alias(a: u32) -> u32;
 }
 
